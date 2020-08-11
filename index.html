@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>librari</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <form action="javascript:void(0);">
+            <div>
+                <label for="title">Title</label><br>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div>
+                <label for="author">Author</label><br>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div>
+                <label for="pages">Pages</label><br>
+                <input type="number" id="pages" min="1" name="pages" required>
+            </div>
+            <div>    
+                <span>Have you read this book?</span><br>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="read" value="yes" required>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="read" value="no">
+            </div>
+            <br><button type="button" id="newBook">New Book</button>
+        </form>
+        <div id="table-container">
+            <div id="author-col">
+                <p>Author</p>
+            </div>
+            <div id="title-col">
+                <p>Title</p>
+            </div>
+            <div id="pages-col">
+                <p>Pages</p>
+            </div>
+            <div id="read-col">
+                <p>Have you read this book?</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>    
+    </body>
+</html>

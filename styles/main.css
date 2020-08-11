@@ -1,0 +1,12 @@
+#table-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#table-container > div {
+    width: 20%;
+}
+
+#table-container > div > p {
+    text-align: center;
+}
