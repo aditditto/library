@@ -4,9 +4,26 @@
 }
 
 #table-container > div {
-    width: 20%;
+    width: 15%;
 }
 
-#table-container > div > p {
+.column {
     text-align: center;
+}
+.column p {
+    text-align: center;
+    height: 2.5rem;
+}
+
+#form-container {
+    display: none;
+}
+
+.column button {
+    padding: 0 0.5rem;
+    height: 1.2rem;
+    border: none;
+    display: block;
+    border-radius: 2px;
+    margin: 0 auto 1.3rem auto;
 }
