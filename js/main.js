@@ -1,3 +1,18 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyAwIgdQ0YEB1nW10EjRl4Q907TUW6i1VoE",
+    authDomain: "library-js-ced7e.firebaseapp.com",
+    databaseURL: "https://library-js-ced7e.firebaseio.com",
+    projectId: "library-js-ced7e",
+    storageBucket: "library-js-ced7e.appspot.com",
+    messagingSenderId: "573815971390",
+    appId: "1:573815971390:web:7a65ab58a2e0702f853b6f",
+    measurementId: "G-G7PP9M0NFE"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
 //inputs
 const submitForm = document.getElementById('new-book-form');
 const titleBox = document.getElementById('title');
@@ -119,4 +134,7 @@ book1 = new Book('poop', 'me', 69, 'Yes')
 myLibrary.push(book1)
 
 render()
-console.log(Object.values(book1))
+console.log(myLibrary[0])
+
+const dbRefObject = firebase.database().ref().child('object');
+dbRefObject.on('value', snap => console.log(snap.val()))

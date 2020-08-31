@@ -26,4 +26,5 @@
     display: block;
     border-radius: 2px;
     margin: 0 auto 1.3rem auto;
+    cursor: pointer;
 }
